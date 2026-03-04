@@ -1,7 +1,7 @@
 FROM giswqs/segment-geospatial:v0.12.2
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PATH="${PATH}:/home/user/.local/bin"
-ENV LANG C.UTF-8
+ENV LANG=C.UTF-8
 
 USER root
 RUN wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py
